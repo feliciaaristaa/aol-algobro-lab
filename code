@@ -1,1 +1,26 @@
+void hitungRoastDariFile(RoastScore *score) {
+    FILE *fp;
+    Artist a;
+    RoastType r;
+    int i;
+
+    for (i = 0; i < ROAST_COUNT; i++)
+        score->point[i] = 0;
+
+    fp = fopen("artist.dat", "rb");
+    if (fp == NULL) {
+        printf("Belum ada data artist.\n");
+        return;
+    }
+
+    while (fread(&a, sizeof(Artist), 1, fp)) {
+        r = artistToRoast(a.nama);
+        if (r == ROAST_COUNT)
+            r = genreToRoast(a.genre);
+
+        score->point[r]++;
+    }
+
+    fclose(fp);
+}
 
