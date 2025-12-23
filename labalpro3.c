@@ -497,7 +497,7 @@ int main() {
    				searchArtist();
    				break;
    			
- 	case 3:  // lihat semua data
+ 			case 3:  // lihat semua data
    				lihatSemuaData();
    				break;
 
@@ -523,7 +523,6 @@ int main() {
 				deteksiFakeFan();
    				break;
 								
-				
             case 9:  //keluar program
             	keluarProgram();
                 printf("Keluar dari program...\n");
@@ -539,5 +538,3 @@ int main() {
 
     return 0;
 }
-
-
