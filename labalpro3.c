@@ -253,7 +253,7 @@ void tampilkanRoast(RoastType r) {
             printf("Siapa lagi yang playlistnya kayak gini kalo bukan si paling sadboy/sadgirl. Sesulit apa si sampe kalian gamon?\n");
             break;
         case ROAST_DELUSIONAL:
-            printf("Stop fanatik dan fokus ke realita. Meskipun musik itu satu-satunya hal yang bikin kamu oke, tapi gak gitu juga ya…\n");
+            printf("Stop fanatik dan fokus ke realita. Meskipun musik itu satu-satunya hal yang bikin kamu oke, tapi gak gitu juga yaâ€¦\n");
             break;
         case ROAST_PERFORMATIVE:
             printf("Playlist kamu isinya kek gini cuma buat keliatan aesthetic doang, iya kan?\n");
@@ -535,8 +535,9 @@ int main() {
                 getchar();
         }
 
-    } while (pilihan != 8);
+    } while (pilihan != 9);
 
     return 0;
 }
+
 
